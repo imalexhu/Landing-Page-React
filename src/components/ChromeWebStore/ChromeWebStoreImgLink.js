@@ -11,7 +11,13 @@ const ChromeWebStoreImgLink = ({
       }}
       target="_blank"
     >
-      <img 
+      <img
+          onClick={() => {
+            window.gtag('event', 'conversion', {
+              'send_to': 'AW-11257957829/cGytCLrryLoYEMWbm_gp',
+              // 'event_callback': callback
+            });
+          }}
           style={{
               height: height
           }}

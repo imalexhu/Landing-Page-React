@@ -5,14 +5,10 @@ import { Navbar, Footer } from './components';
 import Home from './pages/HomePage/Home';
 import Products from './pages/Products/Products';
 import ScrollToTop from './components/ScrollToTop';
-import MetaPixel from './utils/MetaPixel';
-
 
 function App() {
-
   return (
     <Router>
-      <MetaPixel/>
       <GlobalStyles />
       <ScrollToTop />
       <Navbar />

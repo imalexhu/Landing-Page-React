@@ -12,6 +12,7 @@ import {
 } from "./InfoSection.elements";
 import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
+import ChromeWebStoreImgLink from "../ChromeWebStore/ChromeWebStoreImgLink";
 
 const InfoSection = ({
   primary,
@@ -39,17 +40,22 @@ const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link
-                  to={{
-                    pathname:
-                      "https://chrome.google.com/webstore/detail/discountly/gnocblmhdddbhhdijfdnloldcbnhhign",
-                  }}
-                  target="_blank"
-                >
-                  <Button big fontBig primary={primary}>
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                
+                {(buttonLabel === "DOWNLOAD" ? (
+                  <ChromeWebStoreImgLink height={75} />
+                ) : (
+                  <Link
+                    to={{
+                      pathname:
+                        "https://chrome.google.com/webstore/detail/discountly/gnocblmhdddbhhdijfdnloldcbnhhign",
+                    }}
+                    target="_blank"
+                  >
+                    <Button big fontBig primary={primary}>
+                      {buttonLabel}
+                    </Button>
+                  </Link>
+                ))}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn lightBg={lightBg}>

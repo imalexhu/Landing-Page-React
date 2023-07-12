@@ -83,10 +83,10 @@ export const ImgWrapper = styled.div`
 export const TopLine = styled.div`
   color: ${({ lightTopLine }) => (lightTopLine ? "#017A5E" : "#017A5E")};
   font-size: 24px;
-  line-height: 16px;
+  line-height: 28px;
   font-weight: 900;
   letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 export const Img = styled.img`

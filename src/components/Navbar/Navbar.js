@@ -12,8 +12,8 @@ import { Nav,
  } from './Navbar.elements'
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib'
-import { Button } from '../../globalStyles';
 import logoSrc from "../../images/logo.svg";
+import ChromeWebStoreImgLink from '../ChromeWebStore/ChromeWebStoreImgLink';
 
 
 function Navbar() {
@@ -66,15 +66,7 @@ function Navbar() {
 
                 <NavItemBtn>
                   {button ? (
-                    <NavBtnLink
-                      to={{
-                        pathname:
-                          "https://chrome.google.com/webstore/detail/discountly/gnocblmhdddbhhdijfdnloldcbnhhign",
-                      }}
-                      target="_blank"
-                    >
-                      <Button primary>SIGN UP</Button>
-                    </NavBtnLink>
+                    <ChromeWebStoreImgLink height={"50px"} />
                   ) : (
                     <NavBtnLink
                       to={{

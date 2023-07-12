@@ -33,8 +33,8 @@ function Footer() {
         <FooterLinksWrapper>
           <FooterLinkItems>
             <FooterLinkTitle>Social Media</FooterLinkTitle>
-            <FooterLink to="/">Instagram</FooterLink>
-            <FooterLink to="/">Facebook</FooterLink>
+            <FooterLink to="https://www.instagram.com/discountlychromeextension/">Instagram</FooterLink>
+            <FooterLink to="https://www.facebook.com/profile.php?id=100094050942047">Facebook</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>

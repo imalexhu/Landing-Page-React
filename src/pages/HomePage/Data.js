@@ -8,7 +8,7 @@ export const homeObjOne = {
   headline: "Elevate your online shopping experience with the power of AI",
   description:
     "Say goodbye to tedious price comparisons and hunting for deals. Discountly's intelligent search algorithm scours the web, locating discounted items related to your shopping interests.",
-  buttonLabel: "Learn More",
+  buttonLabel: "DOWNLOAD",
   imgStart: "",
   img: require("../../images/1.png"),
   alt: "Online Shopping",

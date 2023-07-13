@@ -24,7 +24,6 @@ const InfoSection = ({
   headline,
   description,
   buttonLabel,
-  highlightColor,
   img,
   alt,
   imgStart,

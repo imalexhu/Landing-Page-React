@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyles from './globalStyles'
 import { Navbar, Footer } from './components';
 import Home from './pages/HomePage/Home';
-import Products from './pages/Products/Products';
 import ScrollToTop from './components/ScrollToTop';
+import TestBlogPage from './pages/BlogPages/TestBlogPage/TestBlogPage';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/products" component={Products} />
+        <Route path="/blog" component={TestBlogPage} />
       </Switch>
       <Footer />
     </Router>

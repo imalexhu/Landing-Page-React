@@ -35,7 +35,7 @@ function Footer() {
             <FooterLinkTitle>Social Media</FooterLinkTitle>
             <FooterLink to={{
                 pathname:
-                  "https://www.instagram.com/discountlychromeextension/",
+                  "https://www.instagram.com/discountly_/",
               }}
               target="_blank" >Instagram</FooterLink>
             <FooterLink to={{

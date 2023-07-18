@@ -21,7 +21,9 @@ export const BlogText = styled.p`
 `;
 
 export const ImageSection = styled.img`    
-    width: auto;
+    width: 95%;
+    height:auto;
+
     margin: 10px;
     background-color: black;
 `;

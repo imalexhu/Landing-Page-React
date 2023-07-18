@@ -17,7 +17,7 @@ function BlogPageContent({
                 </BlogText>
             }
             else if (section.type === "IMAGE") {
-                return <ImageSection src={section.imgUrl} alt={section.imgAlt} height={section.height} />
+                return <ImageSection src={section.imgUrl} alt={section.imgAlt}  />
             } else {
                 return (
                     <h1>Error section type not supported {section.type}</h1>

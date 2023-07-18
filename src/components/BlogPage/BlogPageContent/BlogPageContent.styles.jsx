@@ -19,9 +19,16 @@ export const BlogText = styled.p`
     width: 100%;
     text-align: left;
 `;
+export const BlogHeader = styled.h1`
+    line-height: 32px;
+    font-family: SuisseIntl,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-variant-numeric: proportional-nums;
+
+    width: 100%;
+    text-align: left;
+`;
 
 export const ImageSection = styled.img`    
-    width: 95%;
     height:auto;
     margin: 10px;
     border: 5px solid black;

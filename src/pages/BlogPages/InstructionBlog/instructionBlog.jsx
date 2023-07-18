@@ -5,7 +5,7 @@ import { instructionBlogPageData } from "./Data";
 function InstructionBlogPage() {
   return <BlogPage 
         {...instructionBlogPageData}
-    />;
+    />
 }
 
 export default InstructionBlogPage;

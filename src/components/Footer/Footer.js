@@ -29,7 +29,13 @@ const Footer = ({ lightBg }) => {
           </FooterLinkItems>
           <FooterLinkItems lightBg={lightBg}>
             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-            <FooterLink lightBg={lightBg} to="/">
+            <FooterLink
+              lightBg={lightBg}
+              to={{
+                pathname: "https://www.m.me/100094050942047",
+              }}
+              target="_blank"
+            >
               Contact
             </FooterLink>
           </FooterLinkItems>

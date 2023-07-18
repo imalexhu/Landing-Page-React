@@ -1,5 +1,5 @@
 export const instructionBlogPageData = {
-  heroImgUrl: require("../../../images/royalty-free.jpg"),
+  heroImgUrl: require("../../../images/instruction/royalty-free.jpg"),
   heroImgAlt: "BlogPageBackground",
   header: "How to use Discountly",
   writtenByText: "Discountly staff | 13 July 2023",
@@ -16,7 +16,7 @@ export const instructionBlogPageData = {
     },
     {
       type: "TEXT",
-      text: "Discountly is a chrome extension that automatically runs in the background whenever you shop online to try and find you the best deals. By default Discounlty only runs when you visit a store page from facebook.",
+      text: "Discountly is a chrome extension that automatically runs in the background whenever you shop online to try and find you the best deals. By default Discounlty only runs when you visit a store page that contains a significant price markup.",
     },
     {
       type: "IMAGE",

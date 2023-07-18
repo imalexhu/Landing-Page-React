@@ -7,6 +7,9 @@ import {
     BlogText,
 } from "./BlogPage.styles"
 import BlogPageContent from "./BlogPageContent/BlogPageContent"
+import { Navbar, Footer } from "../../components";
+
+const lightBg = true;
 
 function BlogPage({
     heroImgUrl,
@@ -16,18 +19,22 @@ function BlogPage({
     content,
 }) {
   return (
-    <BlogPageContainer>
-        <HeroImage src={heroImgUrl} alt={heroImgAlt} />
-        <ContentContainer>
-            <BlogHeader>
-                {header}
-            </BlogHeader>
-            <BlogText>
-                {writtenByText}
-            </BlogText>
-            <BlogPageContent content={content} />
-        </ContentContainer>
-    </BlogPageContainer>
+    <>
+    <Navbar lightBg={lightBg}/>
+        <BlogPageContainer>
+            <HeroImage src={heroImgUrl} alt={heroImgAlt} />
+            <ContentContainer>
+                <BlogHeader>
+                    {header}
+                </BlogHeader>
+                <BlogText>
+                    {writtenByText}
+                </BlogText>
+                <BlogPageContent content={content} />
+            </ContentContainer>
+        </BlogPageContainer>
+    <Footer lightBg={lightBg}/>
+    </>
   );
 }
 

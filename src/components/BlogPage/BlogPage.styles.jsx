@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BlogPageContainer = styled.div`
-    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

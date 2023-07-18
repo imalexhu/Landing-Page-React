@@ -16,7 +16,7 @@ import logoSrc from "../../images/logo.svg";
 import ChromeWebStoreImgLink from '../ChromeWebStore/ChromeWebStoreImgLink';
 
 
-function Navbar() {
+const Navbar = ({lightBg})=> {
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -49,9 +49,9 @@ function Navbar() {
     return (
       <>
         <IconContext.Provider value={{ color: "#fff" }}>
-          <Nav>
+          <Nav lightBg={lightBg}>
             <NavbarContainer>
-              <NavLogo to="/">
+              <NavLogo lightBg={lightBg} to="/">
                 <Logo src={logoSrc} />
               </NavLogo>
               <HamburgerIcon onClick={handleClick}>
@@ -59,7 +59,7 @@ function Navbar() {
               </HamburgerIcon>
               <NavMenu onClick={handleClick} click={click}>
                 <NavItem onClick={handleHomeClick} homeClick={homeClick}>
-                  <NavLinks to="/" onClick={closeMobileMenu}>
+                  <NavLinks lightBg={lightBg} to="/" onClick={closeMobileMenu}>
                     Home
                   </NavLinks>
                 </NavItem>

@@ -4,7 +4,7 @@ import GlobalStyles from './globalStyles'
 import { Navbar, Footer } from './components';
 import Home from './pages/HomePage/Home';
 import ScrollToTop from './components/ScrollToTop';
-import TestBlogPage from './pages/BlogPages/TestBlogPage/TestBlogPage';
+import InstructionBlog from './pages/BlogPages/InstructionBlog/instructionBlog';
 
 function App() {
   return (
@@ -14,11 +14,10 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/blog" component={TestBlogPage} />
+        <Route path="/blog/instructions" component={InstructionBlog} />
       </Switch>
       <Footer />
     </Router>
   );
 }
-
 export default App;

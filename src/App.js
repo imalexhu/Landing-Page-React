@@ -6,6 +6,14 @@ import ScrollToTop from './components/ScrollToTop';
 import InstructionBlog from './pages/BlogPages/InstructionBlog/instructionBlog';
 import ReasonBlogPage from './pages/BlogPages/Reasons/ReasonBlog';
 
+
+
+const InstallPage =()=>  {
+  window.location = "/blog/instructions"
+  return <></>
+}
+
+
 function App() {
   return (
     <Router>
@@ -13,8 +21,9 @@ function App() {
       <ScrollToTop />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/install" component={InstallPage} />
         <Route path="/blog/instructions" component={InstructionBlog} />
-        <Route path="/blog/reason" component={ReasonBlogPage} />
+        <Route path="/blog/reasons" component={ReasonBlogPage} />
       </Switch>
     </Router>
   );

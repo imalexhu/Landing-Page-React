@@ -4,7 +4,7 @@ import {  FaTag } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
-  background: #101522;
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const NavbarContainer = styled(Container)`
 `
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: ${({ lightBg }) => (lightBg ? "#101522" : "#fff")};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -97,26 +97,25 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
-    
+  color: ${({ lightBg }) => (lightBg ? "#101522" : "#fff")};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
 
-    @media screen and (max-width: 960px) {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
 
-        &:hover {
-            color: #4b59f7;
-            transition: all 0.3s ease;
-        }
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
     }
-`
+  }
+`;
 
 export const NavItemBtn = styled.li`
   @media screen and (max-width: 960px) {

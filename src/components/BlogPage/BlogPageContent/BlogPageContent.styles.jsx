@@ -23,7 +23,7 @@ export const BlogText = styled.p`
 export const ImageSection = styled.img`    
     width: 95%;
     height:auto;
-
     margin: 10px;
+    border: 5px solid black;
     background-color: black;
 `;

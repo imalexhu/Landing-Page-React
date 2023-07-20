@@ -40,7 +40,7 @@ const InfoVideo = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
                 {(buttonLabel === "DOWNLOAD" ? (
-                  <ChromeWebStoreImgLink height={75} />
+                  <ChromeWebStoreImgLink style={{height: "75px"}} />
                 ) : (
                   <Link
                     to={{

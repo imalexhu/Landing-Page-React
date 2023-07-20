@@ -70,7 +70,7 @@ const Navbar = ({lightBg})=> {
 
                 <NavItemBtn>
                   {button ? (
-                    <ChromeWebStoreImgLink lightBg={lightBg} height={"50px"} />
+                    <ChromeWebStoreImgLink lightBg={lightBg} style={{height: "50px"}} />
                   ) : (
                     <NavBtnLink
                       to={{

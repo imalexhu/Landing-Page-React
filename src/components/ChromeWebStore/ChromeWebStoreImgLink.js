@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
   background-color: white;
   &:hover {
     background-color: ${({ lightBg }) => (lightBg ? "black" : "white")};
@@ -12,7 +10,7 @@ export const Img = styled.img`
 
 const ChromeWebStoreImgLink = ({
   lightBg,
-  height,
+  style,
 }) => {
   return (
     <Link
@@ -30,9 +28,7 @@ const ChromeWebStoreImgLink = ({
             // 'event_callback': callback
           });
         }}
-        style={{
-          height: height,
-        }}
+        style={style}
         src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png"
         alt="Download from the Chrome Web Store"
       />

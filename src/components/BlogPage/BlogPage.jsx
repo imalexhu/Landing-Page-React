@@ -36,7 +36,7 @@ function BlogPage({
                 <h2>
                     Download Today
                 </h2>
-            <ChromeWebStoreImgLink lightBg={true}/>
+            <ChromeWebStoreImgLink lightBg={true} style={{width: "100%"}}/>
         </BlogPageContainer>
     <Footer lightBg={lightBg}/>
     </>

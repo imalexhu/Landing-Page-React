@@ -19,7 +19,7 @@ const Footer = ({ lightBg }) => {
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems lightBg={lightBg}>
-            <FooterLinkTitle>About Us</FooterLinkTitle>
+            <FooterLinkTitle>Blogs</FooterLinkTitle>
             <FooterLink lightBg={lightBg} to="/blog/reasons">
               Why Coupons Are Overated
             </FooterLink>

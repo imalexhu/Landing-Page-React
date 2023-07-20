@@ -58,7 +58,11 @@ const Navbar = ({lightBg})=> {
                 {click ? <FaTimes /> : <FaBars />}
               </HamburgerIcon>
               <NavMenu onClick={handleClick} click={click}>
-                <NavItem onClick={handleHomeClick} homeClick={homeClick}>
+                <NavItem
+                  lightBg={lightBg}
+                  onClick={handleHomeClick}
+                  homeClick={homeClick}
+                >
                   <NavLinks lightBg={lightBg} to="/" onClick={closeMobileMenu}>
                     Home
                   </NavLinks>
@@ -66,7 +70,7 @@ const Navbar = ({lightBg})=> {
 
                 <NavItemBtn>
                   {button ? (
-                    <ChromeWebStoreImgLink height={"50px"} />
+                    <ChromeWebStoreImgLink lightBg={lightBg} height={"50px"} />
                   ) : (
                     <NavBtnLink
                       to={{

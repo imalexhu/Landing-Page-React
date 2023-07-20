@@ -12,7 +12,7 @@ export const instructionBlogPageData = {
       type: "IMAGE",
       imgUrl: require("../../../images/instruction/dog.jpeg"),
       imgAlt: "Dog",
-      height: "400px",
+      width: "60%",
     },
     {
       type: "TEXT",
@@ -22,7 +22,7 @@ export const instructionBlogPageData = {
       type: "IMAGE",
       imgUrl: require("../../../images/instruction/loading.png"),
       imgAlt: "Dog",
-      height: "200px",
+      width: "60%",
     },
     {
       type: "TEXT",
@@ -32,7 +32,7 @@ export const instructionBlogPageData = {
       type: "IMAGE",
       imgUrl: require("../../../images/instruction/generate.png"),
       imgAlt: "Dog",
-      height: "400px",
+      width: "60%",
     },
     {
       type: "TEXT",
@@ -42,7 +42,7 @@ export const instructionBlogPageData = {
       type: "IMAGE",
       imgUrl: require("../../../images/instruction/result.png"),
       imgAlt: "Dog",
-      height: "400px",
+      width: "60%",
     },
     {
       type: "TEXT",
@@ -52,7 +52,7 @@ export const instructionBlogPageData = {
       type: "IMAGE",
       imgUrl: require("../../../images/instruction/cat-hat.jpeg"),
       imgAlt: "Dog",
-      height: "400px",
+      width: "60%",
     },
   ],
 };

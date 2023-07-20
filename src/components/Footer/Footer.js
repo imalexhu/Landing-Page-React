@@ -20,11 +20,11 @@ const Footer = ({ lightBg }) => {
         <FooterLinksWrapper>
           <FooterLinkItems lightBg={lightBg}>
             <FooterLinkTitle>About Us</FooterLinkTitle>
-            <FooterLink lightBg={lightBg} to="/mission">
-              Our Mission
+            <FooterLink lightBg={lightBg} to="/blog/reasons">
+              Why Coupons Are Overated
             </FooterLink>
-            <FooterLink lightBg={lightBg} to="/works">
-              How it works
+            <FooterLink lightBg={lightBg} to="/blog/instructions">
+              How to use Discountly
             </FooterLink>
           </FooterLinkItems>
           <FooterLinkItems lightBg={lightBg}>

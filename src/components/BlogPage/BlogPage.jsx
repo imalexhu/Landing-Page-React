@@ -8,6 +8,7 @@ import {
 } from "./BlogPage.styles"
 import BlogPageContent from "./BlogPageContent/BlogPageContent"
 import { Navbar, Footer } from "../../components";
+import ChromeWebStoreImgLink from "../ChromeWebStore/ChromeWebStoreImgLink"
 
 const lightBg = true;
 
@@ -32,6 +33,10 @@ function BlogPage({
                 </BlogText>
                 <BlogPageContent content={content} />
             </ContentContainer>
+                <h2>
+                    Download Today
+                </h2>
+            <ChromeWebStoreImgLink lightBg={true}/>
         </BlogPageContainer>
     <Footer lightBg={lightBg}/>
     </>
